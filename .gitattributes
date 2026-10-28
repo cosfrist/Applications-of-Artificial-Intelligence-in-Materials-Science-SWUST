@@ -1,0 +1,19 @@
+# 本仓库以「字节保真」为先：课程 SHA256 清单按文件字节校验，
+# 任何换行规范化都会让清单失效，因此整体关闭 Git 的自动换行转换。
+* -text
+
+# 二进制素材：不做 diff / merge
+*.pptx binary
+*.docx binary
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+
+# 纯文本仍按文本做 diff（只影响显示，不改变存储字节）
+*.md  diff
+*.py  diff
+*.sh  diff
+*.yml diff
+*.csv diff
+*.svg diff
+*.bat diff

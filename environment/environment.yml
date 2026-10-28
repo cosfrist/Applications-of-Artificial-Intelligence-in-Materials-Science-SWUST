@@ -1,0 +1,82 @@
+# =============================================================================
+# 《AI 在材料科学中的应用》课程统一环境规范（汇总版）
+# 环境名：MICourse    Python：3.11    GPU：不需要（全部 CPU 可完成）
+#
+# 说明
+# ----
+# 本文件是「最终验收通过」的完整清单，覆盖第 1—10 讲全部代码需求。
+# 分讲的增量依赖见各讲 code/environment.yml，本文件是其并集。
+#
+# ⚠️ 关键：不要用 `conda env create -f environment.yml` 一把装完。
+#    Windows 上 conda 装的 NumPy 链接 MKL，与本机 MKL 2026.x 不兼容，
+#    会出现「import 正常、一算矩阵乘法进程直接崩（0xC06D007F）」。
+#    正确做法是分两步：conda 只建解释器与纯 C/C++ 依赖，数值库与其余全部走 pip
+#    官方 wheel（自带 OpenBLAS）。可执行 rebuild_env.sh 一键完成。
+#
+# 本机实测版本见同目录《自检结果.md》。
+# =============================================================================
+
+name: MICourse
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  # ── 解释器 ────────────────────────────────────────────────────────────────
+  - python=3.11
+
+  # ── 仅在 conda 侧安装的包（wheel 在 Windows 上难编译或无官方轮子）──────────
+  - rdkit                    # 化学信息学；conda-forge 的 Windows 构建最稳
+  - openpyxl                 # pandas 读写 .xlsx
+  - xlrd                     # pandas 读写旧版 .xls
+  - sympy                    # pymatgen / matminer 的符号运算依赖
+  - jupyterlab               # 课内 Notebook 环境
+  - ipykernel                # 注册 micourse 内核
+
+  # ── 其余全部走 pip（官方 wheel，自带 OpenBLAS）─────────────────────────────
+  - pip
+  - pip:
+      # 数值底座：必须 pip 装，不要用 conda 的 MKL 版本
+      - numpy>=1.26,<2
+      - scipy>=1.11
+
+      # 数据处理与绘图
+      - pandas>=2.1
+      - matplotlib>=3.8
+      - seaborn>=0.13
+      - pyarrow>=15,<18          # numpy 2 之前的 pyarrow；>=18 要求 numpy>=2
+      - openpyxl
+
+      # 统计与机器学习
+      - statsmodels>=0.14
+      - scikit-learn>=1.4
+      - joblib>=1.3
+      - shap>=0.44               # 模型归因（第 9 讲）
+      - networkx>=3.2            # 图表示（第 5 讲）
+
+      # 材料信息学
+      - pymatgen>=2024.1
+      - mp-api>=0.41             # 需自备 Materials Project API Key
+      - ase>=3.22                # 结构文件 I/O
+      - matminer>=0.9            # 成分/结构特征（第 4、5 讲）
+      - CBFV>=1.0                # 成分向量化基线
+
+      # 优化与进化算法
+      - optuna>=3.5              # 贝叶斯优化（第 14 讲）
+      - pymoo>=0.6               # 多目标进化
+      - deap>=1.4                # 遗传算法 / 符号回归
+      - Bgolearn>=3.1            # 贝叶斯全局优化教学包
+
+      # 深度学习（CPU 版即可）
+      - torch>=2.3
+      - torchvision>=0.18
+
+# ── 安装后必做的三步（rebuild_env.sh 已内置）─────────────────────────────────
+# 1. 固化 PYTHONNOUSERSITE=1：否则 C:\Users\<用户>\AppData\Roaming\Python 下
+#    的用户级 numpy/pandas 会盖掉环境内版本，且版本错乱极难排查。
+# 2. 统一 MSVC 运行库：pip wheel 常在包目录自带旧版 msvcp140.dll
+#    （如 pyarrow 带 14.28、sklearn 带 14.42），先于 torch 加载会让
+#    torch 的 c10.dll 报 "WinError 1114 DLL 初始化例程失败"。
+#    解法：把这些私有副本替换成环境根目录的同一版本（14.51+）。
+# 3. 运行 verify_env.py 做分层验收，必须 44/44 通过。

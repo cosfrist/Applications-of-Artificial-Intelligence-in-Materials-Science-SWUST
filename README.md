@@ -6,6 +6,45 @@
 > 学分/学时：2/32｜考核：考查｜组织：8周，每周4学时，按16个2学时教学单元设计
 > 学生自带电脑；班级规模按11—30人设计；每学时按45教学分钟编排，课间休息另计。
 
+---
+
+## 仓库导览
+
+本仓库是课程的**学生资料库**：课件、讲义、代码、课堂表单与作业按讲次组织；环境与教学文件集中在 `environment/` 与 `docs/`。
+
+| 目录 | 内容 |
+|---|---|
+| `environment/` | 课程统一环境 `MICourse`：`environment.yml`、`verify_env.py`（44 项分层自检）、一键重建脚本、Windows 启动器 |
+| `docs/` | 教学大纲 V5、授课计划 V5（md + docx）、中英文术语对照表、逐讲教材章节与论文导航、资源与许可说明 |
+| `lectures/` | 16 个教学单元，每讲一个目录：课件、讲义、可运行代码、课堂表单、本讲说明 |
+| `assignments/` | HW1—HW4 任务书与评分细则 |
+| `resources/` | 教材 PDF、书目与获取链接、论文阅读清单、课程海报 |
+
+### 快速开始
+
+```bash
+git clone https://github.com/cosfrist/Applications-of-Artificial-Intelligence-in-Materials-Science-SWUST.git
+cd Applications-of-Artificial-Intelligence-in-Materials-Science-SWUST
+```
+
+1. **配环境（第 1 讲前完成）**：按 `environment/README.md` 建 `MICourse` 环境，再运行 `python environment/verify_env.py`，44 项全部分层通过才算就绪。
+2. **读本讲说明**：进入 `lectures/<讲次>-<主题>/README.md`，看本讲目标、90 分钟路线与本讲文件清单。
+3. **跑代码**：每讲代码目录自带 `README.md` 与真实输出示例，按其中命令执行，先 `run` 再 `check`。
+
+### 资料发布状态
+
+课件与代码按讲次随教学进度发布；未发布的目录只保留占位说明，不预先放半成品。
+
+| 讲次 | 课件 | 讲义 | 代码 | 课堂表单 |
+|---|---|---|---|---|
+| 00 课程导论 | 已发布 | — | — | — |
+| 01 材料信息学导论与AI产业 | 已发布 | 已发布 | 已发布 | 已发布 |
+| 02—12 | 待发布 | 待发布 | 待发布 | 待发布 |
+| 13—16 | 制作中 | 制作中 | 制作中 | 制作中 |
+| HW1—HW4 | 见 `assignments/` | | | |
+
+发布口径：课件不剥离讲稿备注；每讲整讲验收通过后逐批开放，历史版本不回溯发布。
+
 ## 一、课程简介与定位
 
 本课程围绕博士研究中的材料问题，组织“问题定义—数据获取—材料表示—可信建模—不确定性—实验决策—物理与文献验证”方法链。以成分、晶体结构和分子表示为基础，重点训练小样本条件下的模型选择、分组验证、迁移判断与贝叶斯优化。学生通过课堂任务、四次作业、一次论文评议和自主项目，形成可追溯、可复核的材料研究结论。深度模型和前沿工具服务于材料问题；模型分数、生成候选及自动抽取结果均须接受物理与独立证据检验。
@@ -179,5 +218,16 @@ LOCO准确指leave-one-cluster-out；成分家族/批次分组应明确命名。
 Optuna是优化框架，本课显式区分TPE与GP采样器，不把任意Optuna运行描述为GP-EI实验优化。
 [Optuna TPE](https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.TPESampler.html)、[Optuna GP](https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.GPSampler.html)。
 预处理、选特征、调参均限定在训练/验证流程内。[scikit-learn数据泄漏与Pipeline说明](https://scikit-learn.org/stable/common_pitfalls.html#data-leakage)。
+
+## 九、仓库资料使用说明
+
+- **代码**：采用 MIT 许可，见根目录 `LICENSE`。
+- **讲义、课件、课堂表单、作业**：仅限本课程教学使用，未经授课教师书面许可不得再分发或用于商业用途。
+- **教材**：*An Introduction to Statistical Learning: with Applications in Python* 由作者在 [statlearning.com](https://www.statlearning.com) 免费发布，本仓库副本仅供选课学生便利使用，版权归作者与 Springer。
+- **参考书**：张统一两本《An Introduction to Materials Informatics》为 Springer 版权图书，**不在本仓库分发**，获取方式与官方链接见 `resources/教材与参考书.md`。
+- **论文**：仓库只给引用与 DOI/稳定网址，不存放第三方全文；无权访问的文献请通过学校图书馆获取。
+- 学生自有科研数据不得未经许可上传在线模型；课堂与考核提供离线数据替代路径。
+
+详细说明见 `docs/资源与许可说明.md`。
 
 

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="460" viewBox="0 0 860 460" font-family="Microsoft YaHei, SimHei, sans-serif">
+<rect width="860" height="460" fill="#FFFFFF"/>
+<text x="78" y="34" font-size="20" fill="#0E3F8C" font-weight="bold">小样本带隙分布（教学取整数据，仅用于流程演示）</text>
+<text x="78" y="56" font-size="13" fill="#5D6E85">样本数 n = 12；纵轴为带隙 / eV</text>
+<line x1="78" y1="364.0" x2="830" y2="364.0" stroke="#E3E9F2" stroke-width="1"/>
+<text x="68" y="368.0" font-size="12" fill="#3A4759" text-anchor="end">0</text>
+<line x1="78" y1="306.0" x2="830" y2="306.0" stroke="#E3E9F2" stroke-width="1"/>
+<text x="68" y="310.0" font-size="12" fill="#3A4759" text-anchor="end">2</text>
+<line x1="78" y1="248.0" x2="830" y2="248.0" stroke="#E3E9F2" stroke-width="1"/>
+<text x="68" y="252.0" font-size="12" fill="#3A4759" text-anchor="end">4</text>
+<line x1="78" y1="190.0" x2="830" y2="190.0" stroke="#E3E9F2" stroke-width="1"/>
+<text x="68" y="194.0" font-size="12" fill="#3A4759" text-anchor="end">6</text>
+<line x1="78" y1="132.0" x2="830" y2="132.0" stroke="#E3E9F2" stroke-width="1"/>
+<text x="68" y="136.0" font-size="12" fill="#3A4759" text-anchor="end">8</text>
+<line x1="78" y1="74.0" x2="830" y2="74.0" stroke="#E3E9F2" stroke-width="1"/>
+<text x="68" y="78.0" font-size="12" fill="#3A4759" text-anchor="end">10</text>
+<line x1="78" y1="74" x2="78" y2="364" stroke="#3A4759" stroke-width="1.5"/>
+<line x1="78" y1="364" x2="830" y2="364" stroke="#3A4759" stroke-width="1.5"/>
+<text x="18" y="219" font-size="13" fill="#3A4759" transform="rotate(-90 18 219)" text-anchor="middle">带隙 / eV</text>
+<rect x="89.3" y="266.3" width="40.1" height="97.7" fill="#0E3F8C" rx="2"/>
+<text x="109.3" y="260.3" font-size="11" fill="#0B1B33" text-anchor="middle">3.37</text>
+<text x="109.3" y="382" font-size="11" fill="#3A4759" text-anchor="middle">ZnO</text>
+<rect x="151.9" y="271.2" width="40.1" height="92.8" fill="#1E4FA8" rx="2"/>
+<text x="172.0" y="265.2" font-size="11" fill="#0B1B33" text-anchor="middle">3.2</text>
+<text x="172.0" y="382" font-size="11" fill="#3A4759" text-anchor="middle">TiO2</text>
+<rect x="214.6" y="259.6" width="40.1" height="104.4" fill="#0E3F8C" rx="2"/>
+<text x="234.7" y="253.6" font-size="11" fill="#0B1B33" text-anchor="middle">3.6</text>
+<text x="234.7" y="382" font-size="11" fill="#3A4759" text-anchor="middle">SnO2</text>
+<rect x="277.3" y="108.8" width="40.1" height="255.2" fill="#1E4FA8" rx="2"/>
+<text x="297.3" y="102.8" font-size="11" fill="#0B1B33" text-anchor="middle">8.8</text>
+<text x="297.3" y="382" font-size="11" fill="#3A4759" text-anchor="middle">Al2O3</text>
+<rect x="339.9" y="137.8" width="40.1" height="226.2" fill="#0E3F8C" rx="2"/>
+<text x="360.0" y="131.8" font-size="11" fill="#0B1B33" text-anchor="middle">7.8</text>
+<text x="360.0" y="382" font-size="11" fill="#3A4759" text-anchor="middle">MgO</text>
+<rect x="402.6" y="103.0" width="40.1" height="261.0" fill="#1E4FA8" rx="2"/>
+<text x="422.7" y="97.0" font-size="11" fill="#0B1B33" text-anchor="middle">9</text>
+<text x="422.7" y="382" font-size="11" fill="#3A4759" text-anchor="middle">SiO2</text>
+<rect x="465.3" y="195.8" width="40.1" height="168.2" fill="#0E3F8C" rx="2"/>
+<text x="485.3" y="189.8" font-size="11" fill="#0B1B33" text-anchor="middle">5.8</text>
+<text x="485.3" y="382" font-size="11" fill="#3A4759" text-anchor="middle">ZrO2</text>
+<rect x="527.9" y="300.2" width="40.1" height="63.8" fill="#1E4FA8" rx="2"/>
+<text x="548.0" y="294.2" font-size="11" fill="#0B1B33" text-anchor="middle">2.2</text>
+<text x="548.0" y="382" font-size="11" fill="#3A4759" text-anchor="middle">Fe2O3</text>
+<rect x="590.6" y="303.1" width="40.1" height="60.9" fill="#0E3F8C" rx="2"/>
+<text x="610.7" y="297.1" font-size="11" fill="#0B1B33" text-anchor="middle">2.1</text>
+<text x="610.7" y="382" font-size="11" fill="#3A4759" text-anchor="middle">Cu2O</text>
+<rect x="653.3" y="221.9" width="40.1" height="142.1" fill="#1E4FA8" rx="2"/>
+<text x="673.3" y="215.9" font-size="11" fill="#0B1B33" text-anchor="middle">4.9</text>
+<text x="673.3" y="382" font-size="11" fill="#3A4759" text-anchor="middle">Ga2O3</text>
+<rect x="715.9" y="279.9" width="40.1" height="84.1" fill="#0E3F8C" rx="2"/>
+<text x="736.0" y="273.9" font-size="11" fill="#0B1B33" text-anchor="middle">2.9</text>
+<text x="736.0" y="382" font-size="11" fill="#3A4759" text-anchor="middle">In2O3</text>
+<rect x="778.6" y="250.9" width="40.1" height="113.1" fill="#1E4FA8" rx="2"/>
+<text x="798.7" y="244.9" font-size="11" fill="#0B1B33" text-anchor="middle">3.9</text>
+<text x="798.7" y="382" font-size="11" fill="#3A4759" text-anchor="middle">Ta2O5</text>
+<text x="78" y="430" font-size="12" fill="#B3261E">教学取整数据，仅用于流程演示：数值取整自常见文献量级，只用于检查「能读、能算、能存图」这条链路，不得作为数据引用。</text>
+<text x="78" y="448" font-size="11" fill="#8B97A8">生成：环境验收.py（Python 标准库）；数据：带隙小样本.csv</text>
+</svg>

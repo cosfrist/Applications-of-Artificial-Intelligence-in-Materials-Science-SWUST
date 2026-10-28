@@ -1,0 +1,23 @@
+name: MICourse
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - scipy
+  - pip
+# ── 后续讲次逐步添加（本讲脚本不需要 pymatgen）──
+# 第3 讲起需要 Materials Project：
+#   - pymatgen
+#   - mp-api
+# 作业环境需要：
+#   - jupyterlab
+#   - ipykernel
+#
+# 创建 / 重建：
+#   conda env create -f environment.yml
+# 或增量安装：
+#   conda install -n MICourse pymatgen mp-api -y

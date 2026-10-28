@@ -174,8 +174,10 @@ Course description: This doctoral elective follows the materials research workfl
 
 ### 资源质量与技术口径
 
-原讲义目录实存38个PDF、958页，另有2个零字节前沿占位Markdown及1张产业清单。papers目录21个PDF扩展名文件中17个可由解析器打开，包含GP专著；4个为HTML页面，不能列入必读附件。详见新版覆盖矩阵及修订说明，资源数量不作为课堂掌握率。
 
-LOCO准确指leave-one-cluster-out；成分家族/批次分组应明确命名。GP方差不能独自担保分布外可靠性；R²含平方残差，不能说对异常值不敏感。GAT与MPNN有联系但不普遍等价。Optuna是优化框架，本课显式区分TPE与GP采样器，不把任意Optuna运行描述为GP-EI实验优化。[Optuna TPE](https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.TPESampler.html)、[Optuna GP](https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.GPSampler.html)。预处理、选特征、调参均限定在训练/验证流程内。[scikit-learn数据泄漏与Pipeline说明](https://scikit-learn.org/stable/common_pitfalls.html#data-leakage)。
+LOCO准确指leave-one-cluster-out；成分家族/批次分组应明确命名。GP方差不能独自担保分布外可靠性；R²含平方残差，不能说对异常值不敏感。GAT与MPNN有联系但不普遍等价。
+Optuna是优化框架，本课显式区分TPE与GP采样器，不把任意Optuna运行描述为GP-EI实验优化。
+[Optuna TPE](https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.TPESampler.html)、[Optuna GP](https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.GPSampler.html)。
+预处理、选特征、调参均限定在训练/验证流程内。[scikit-learn数据泄漏与Pipeline说明](https://scikit-learn.org/stable/common_pitfalls.html#data-leakage)。
 
 

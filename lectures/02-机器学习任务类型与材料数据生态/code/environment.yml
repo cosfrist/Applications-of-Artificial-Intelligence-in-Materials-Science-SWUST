@@ -1,0 +1,22 @@
+# 第 2 讲代码运行环境规格
+# 用法：conda env create -f environment.yml
+# ⚠️ conda 批量安装会在事务末尾触发批量删除保护而整体回滚，
+#    重建环境时请按 README 逐个包装，或用 pip -i 镜像。
+
+name: MICourse
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - scikit-learn
+  # 以下为第 3 讲起必需，当前未安装
+  # - pymatgen
+  # - mp-api
+  # - jupyterlab
+  # - ipykernel

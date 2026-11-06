@@ -1,0 +1,34 @@
+{
+  "updated_at_local": "2026-11-06T15:39:01.980436+08:00",
+  "ppt_file": "AI在材料科学中的应用-第1讲 材料信息学导论与AI产业-V5.pptx",
+  "bytes": 6000759,
+  "sha256": "d2ade7df3c63a6a99d469cecc51a89eeaf32124975582ba02b49378f976859fa",
+  "pages": 63,
+  "notes_pages": 63,
+  "image_objects": 94,
+  "unique_media_sha256": 30,
+  "crc_passed": true,
+  "footer_sequence_passed": true,
+  "prior_repository_ppt_sha256": "9bcf20d3ec94aba69ce29f2c4b2a151066fcb22c538cb564d1b2d8ee8e28d1df",
+  "changed_pages": {
+    "slide_xml": [
+      1,
+      4
+    ],
+    "visible_text": [
+      4
+    ],
+    "notes": [
+      4
+    ],
+    "image_objects": [
+      1
+    ]
+  },
+  "scope": "文件信息更新；保留用户手动PPT原字节",
+  "whole_lecture_accepted": false,
+  "native_visual_review_performed": false,
+  "scientific_review_performed": false,
+  "student_copies_and_zip_rebuilt": false,
+  "companion_status": "仓库已有63页讲义/路线保留；P4本轮正文和备注修改待WorkBuddy同步。P4—6备注仍沿用第3页文本，角色/分钟待补。本地讲义/路线及学生副本仍是此前60页版。"
+}

@@ -1,0 +1,30 @@
+{
+  "updated_at_local": "2026-11-06T15:39:01.980436+08:00",
+  "ppt_file": "AI在材料科学中的应用-第2讲 机器学习任务类型与材料数据生态-V5.pptx",
+  "bytes": 5268177,
+  "sha256": "0b0e2d0369c2ae08219b9f96f071a7c1bfb2f0fbc1c2d5fdafb33c52132b42d3",
+  "pages": 60,
+  "notes_pages": 60,
+  "image_objects": 91,
+  "unique_media_sha256": 32,
+  "crc_passed": true,
+  "footer_sequence_passed": true,
+  "prior_repository_ppt_sha256": "cb146fdf9766f704903f7f7afd6196c30cb7c4c8bd3762e6cf2ef527c06216ac",
+  "changed_pages": {
+    "slide_xml": [
+      7,
+      12
+    ],
+    "visible_text": [],
+    "notes": [],
+    "image_objects": [
+      7
+    ]
+  },
+  "scope": "文件信息更新；保留用户手动PPT原字节",
+  "whole_lecture_accepted": false,
+  "native_visual_review_performed": false,
+  "scientific_review_performed": false,
+  "student_copies_and_zip_rebuilt": false,
+  "companion_status": "当前60页可见文字和备注与仓库上版相同；本轮P7/P12为图片或版式XML变化。讲义/路线保留。学生副本和ZIP未更新。"
+}
